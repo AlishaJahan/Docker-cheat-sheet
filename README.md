@@ -29,3 +29,22 @@ Working with Containers
 | `docker exec -it <container_id> bash` | Open shell inside container |
 | `docker logs <container_id>`          | View container logs         |
 
+Docker-compose commands
+| Command                | Description                |
+| ---------------------- | -------------------------- |
+| `docker-compose up`    | Start services             |
+| `docker-compose up -d` | Start in detached mode     |
+| `docker-compose down`  | Stop and remove containers |
+| `docker-compose build` | Build images               |
+| `docker-compose ps`    | List services              |
+
+Volumes & Bind Mounts
+| Command                                | Description            |
+| -------------------------------------- | ---------------------- |
+| `docker volume create <name>`          | Create volume          |
+| `docker volume ls`                     | List volumes           |
+| `docker run -v <volume>:/data <image>` | Attach volume          |
+| `docker run -v $(pwd):/app <image>`    | Bind mount current dir |
+
+
+
